@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpue Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="acc-styles.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alpue Analytics | Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="acc-styles.css">
+    
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    </head>
+    <div class="mobileMenuOverlay" id="mobileMenuOverlay"></div>
+    <div class="mobileMenuHolder" id="mobileMenuHolder">
+        <div class="mobileMenu">
+            <div class="mmMenuTopDiv">
+                <button class="mmClose" id="mmCloseButton">&#10005;</button>
+            </div>
+    
+            <ul class="mmUl">
+                <li class="mmLi"><a href="index.html">Alpue</a></li>
+                <li class="mmLi"><a href="services.html" class="mmA">Services</a></li>
+                <li class="mmLi"><a href="about.html" class="mmA">About</a></li>
+                <li class="mmLi"><a href="login.html" class="mmA" id="menuLoginState">My Account</a></li>                
+            </ul>
+        </div>
+    </div>
+    
+    
+    <body>
+        <header class="headerD">
+            <ul class="headerUlD">
+                <li class="headerUlLiD desktopOnly"><img src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/mini_no_bg.png?alt=media&token=66a3d246-43a4-462d-8f1e-8d577e19f273" alt="alpue logo full" class="topLeftLogo"></li>
+                <button class="mmMenuButton mobileOnly" id="mmOpenMobileMenu">menu</button>
+            </ul>
+    
+            <ul class="headerUlD">
+                <li class="headerUlLiD desktopOnly"><a href="index.html">Alpue</a></li>
+                <li class="headerUlLiD desktopOnly"><a href="services.html">Services</a></li>
+                <li class="headerUlLiD desktopOnly"><a href="about.html">About</a></li>
+            </ul>
+            
+            <ul class="headerUlD">
+                <li class="headerUlLiD desktopOnly"><a href="login.html" id="menuLoginState">Login</a></li>
+                <li class="headerUlLiD mobileOnly"><a href="index.html" class="noStyle"><img src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/mini_no_bg.png?alt=media&token=66a3d246-43a4-462d-8f1e-8d577e19f273" alt="alpue logo mini" class="topLeftLogo"></a></li>
+    
+            </ul>
+    
+        </header>
+
+    <div class="horizontalFlexDiv">
+    <h1>Alpue Analytics&trade;</h1>
+    <button class="mediumButton h1Button" id="fetchButton">Fetch data</button>
+    </div>
+    <div class="centerDataBoard">
+        <div class="centerSlider">
+            <button class="radioSlider">Titles</button>
+            <button class="radioSlider">URLs</button>
+            <button class="radioSlider">Events</button>
+            <button class="radioSlider">Conversions</button>
+
+            <!-- <a href="#Titles" class="sliderButton">Title</a>
+            <a href="#URLs" class="sliderButton">URLs</a>
+            <a href="#Events" class="sliderButton">Events</a> -->
+        </div>
+
+        <input type="text" class="searchInput" placeholder="Search">
+        
+
+        <div class="dataContent">
+            <table class="mainTable" id="dataTitles">
+                <thead>
+                    <tr>
+                        <th class="numCol"></th>
+                        <th class="titleCol">Title</th>
+                        <th class="countCol">Views</th>
+                    </tr>
+                </thead>
+                <tbody id="Titles_tbody">
+                    <tr>
+                        <th class="secondRow">1</th>
+                        <th class="secondRow">Home</th>
+                        <th class="secondRow">5</th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="mainTable hiddenTable" id="dataURLs">
+                <thead>
+                    <tr>
+                        <th class="numCol"></th>
+                        <th class="titleCol">URL</th>
+                        <th class="countCol">Views</th>
+                    </tr>
+                </thead>
+                <tbody id="URLs_tbody">
+                    <tr>
+                        <th class="secondRow">1</th>
+                        <th class="secondRow">test.com/home</th>
+                        <th class="secondRow">0</th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="mainTable hiddenTable" id="dataEvents">
+                <thead>
+                    <tr>
+                        <th class="numCol"></th>
+                        <th class="titleCol">Event</th>
+                        <th class="countCol">Count</th>
+                    </tr>
+                </thead>
+                <tbody id="Events_tbody">
+                    <tr>
+                        <th class="secondRow">1</th>
+                        <th class="secondRow">page_view</th>
+                        <th class="secondRow">95</th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="mainTable hiddenTable" id="dataConversions">
+                <thead>
+                    <tr>
+                        <th class="numCol"></th>
+                        <th class="titleCol">Conversion</th>
+                        <th class="countCol">Count</th>
+                    </tr>
+                </thead>
+                <tbody id="URLs_tbody">
+                    <tr>
+                        <th class="secondRow">1</th>
+                        <th class="secondRow">purchase</th>
+                        <th class="secondRow">2</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
