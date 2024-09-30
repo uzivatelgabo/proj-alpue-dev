@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(252, 252, 252);
 }
 
 .headerD{
@@ -216,32 +217,7 @@ header > ul > li > a:hover{
     cursor: pointer;
 }
 
-@media (max-aspect-ratio: 10/14) {
-    .form {
-        background-color: aqua;
-        max-width: 95vw;
-        width: 95vw;
-    }
-    .desktopOnly{
-        display: none;
-    }
-    .mobileOnly{
-        display: flex;
-    }
-    .mobileMenuOverlay{
-        visibility: visible;
-    }
-    .mobileMenuHolder{
-        visibility: visible;
-    }
-    .mobileMenu{
-        visibility: visible;
-    }
-    .radioSlider{
-        background-color: rgb(92, 188, 114);
-    }
 
-}
 
 
 
@@ -435,7 +411,7 @@ header > ul > li > a:hover{
 
 .form{
     all: unset;
-    width: 95vw;
+    width: 90%;
     max-width: 600px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -482,8 +458,9 @@ header > ul > li > a:hover{
     /* font-weight: 600; */
 }
 .formLabel{
-    background-color: rgba(50, 134, 134, 0);
+    background-color: rgba(67, 145, 145, 0);
     text-align: left;
+    width: 100%;
 }
 
 .pNotes{
@@ -512,7 +489,7 @@ header > ul > li > a:hover{
 .proSelect{
     all: unset;
     margin: 0;
-    text-align: center;
+    text-align: left;
     padding-bottom: 0;
     border-radius: 5px;
     background-color: rgb(110, 145, 174);
@@ -520,7 +497,8 @@ header > ul > li > a:hover{
     font-size: 90%;
     z-index: 20;
     padding: 10px 5px;
-    transition-duration: 00ms;
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 10px 0px rgba(181, 181, 181, 0.823);
 }
 .proSelect:hover{
     box-shadow: 0px 0px 20px 0px rgba(110, 145, 174, 0.5);
@@ -562,7 +540,7 @@ header > ul > li > a:hover{
     z-index: 10;
     border-radius: 5px;
     margin-top: 5px;
-    box-shadow: 5px 5px 40px 0px rgb(120, 120, 120);
+    box-shadow: 5px 5px 30px 0px rgb(148, 148, 148);
     visibility: hidden;
 
 }
@@ -576,6 +554,52 @@ header > ul > li > a:hover{
     padding: 10px;
 
 }
+.proCodeP{
+    background-color: #4ab71b00;
+    margin: 15px 10px 16px 10px;
+    text-align: left;
+    font-size: 90%;
+
+}
+.mediumButtonFixed{
+    all: unset;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 0 10px 0px rgb(195, 195, 195);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: rgb(225, 225, 225);
+    transition-duration: 100ms;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 200px;
+
+}
+.mediumButtonFixed:hover{
+    /* background-color: rgb(43, 70, 94); */
+    background-color: rgb(110, 145, 174);
+    color: rgb(0, 0, 0);
+}
+.h3ButtonMenu{
+    background-color: aqua;
+    padding: 0;
+    margin: 10px;
+    text-align: left;
+
+
+}
+
+.floatingDivFlexible{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 0px rgb(233, 233, 233);
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+}
 nav > ul > li {
     color: rgb(225, 225, 225);
     list-style-type: none;
@@ -586,6 +610,8 @@ nav > ul > li {
     border-radius: 3px;
     cursor: pointer;
     font-size: 90%;
+    z-index: 100;
+    overflow: hidden;
 
 }
 nav > ul > li:hover {
@@ -601,33 +627,25 @@ nav > ul {
 }
 
 .proMasterDiv{
-    background-color: rgba(0, 255, 255, 0);
-    height: 600px;
+    background-color: rgb(255, 255, 255);
+    /* height: 600px; */
     width: 1000px;
     max-width: 90vw;
     margin: 20px;
     margin-top: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 40px rgb(233, 233, 233);
+    box-shadow: 0px 0px 50px 0px rgb(233, 233, 233);
     display: flex;
     overflow: hidden;
     padding: 0px;
     flex-direction: column;
-}
-.proCodeP{
-    background-color: #4ab71b00;
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    text-align: left;
-
 }
 
 .proCodeCode{
     background-color: rgba(245, 245, 245, 0);
     margin: 10px;
     border: 1px rgb(185, 185, 185) solid;
-    border-radius: 10px;
+    border-radius: 6px;
     text-align: left;
     padding: 5px;
     color: rgb(185, 185, 185);
@@ -724,5 +742,46 @@ nav > ul {
     background-color: rgb(255, 255, 255);
     z-index: 1100;
     border-radius: 10px;
+
+}
+
+@media (max-aspect-ratio: 10/14) {
+    .form {
+        width: 85%;
+        
+    }
+    .desktopOnly{
+        display: none;
+    }
+    .mobileOnly{
+        display: flex;
+    }
+    .mobileMenuOverlay{
+        visibility: visible;
+    }
+    .mobileMenuHolder{
+        visibility: visible;
+    }
+    .mobileMenu{
+        visibility: visible;
+    }
+    .radioSlider{
+        background-color: rgba(92, 188, 114, 0);
+    }
+    .mediumButtonFixed{
+        /* width: 85%;
+        max-width: 85%;
+        min-width: 85%;
+        padding: 10;
+        margin: 10; */
+
+
+    }
+    .floatingDivFlexible{
+        /* padding: 10px;
+        justify-content: center;
+        align-items: center; */
+
+    }
 
 }
