@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WC92D743');</script> -->
-    
-    <!-- <script src="gtm-insert.js"></script> -->
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account | Alpue Analytics</title>
@@ -23,10 +14,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="icon"
+        href="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/mini_no_bg.ico?alt=media&token=2a7b780e-6409-42e0-a88d-583ace298a4f"
+        type="image/x-icon">
 
-            <!-- Sets the status bar style to transparent -->
-            <meta name="apple-mobile-web-app-capable" content="yes">
-            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 </head>
 
@@ -86,9 +77,10 @@
 <body>
     <header class="headerD">
         <ul class="headerUlD">
-            <li class="headerUlLiD desktopOnly"><img
-                    src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/mini_no_bg.png?alt=media&token=66a3d246-43a4-462d-8f1e-8d577e19f273"
-                    alt="alpue logo full" class="topLeftLogo"></li>
+            <li class="headerUlLiD desktopOnly">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/mini_no_bg.png?alt=media&token=66a3d246-43a4-462d-8f1e-8d577e19f273"
+                    alt="alpue logo full" class="topLeftLogo">
+            </li>
             <button class="mmMenuButton mobileOnly" id="mmOpenMobileMenu">menu</button>
         </ul>
 
@@ -115,9 +107,9 @@
 
 
         <div class="floatingDivFlexible">
-        <p id="accountEmail" class="proCodeP">Email:</p>
-        <p id="accountUserID" class="proCodeP">User ID:</p>
-        <p id="accountProperties" class="proCodeP">Properties: loading</p>
+            <p id="accountEmail" class="proCodeP">Email:</p>
+            <p id="accountUserID" class="proCodeP">User ID:</p>
+            <p id="accountProperties" class="proCodeP">Properties: loading</p>
         </div>
 
     </div>
@@ -156,7 +148,7 @@
 &lt;!-- Alpue Analytics script END --&gt;</pre>
 
     </div>
-    
+
 
     <div class="verFlexDiv">
         <h1 class="textLeft">Actions</h1>
@@ -167,13 +159,14 @@
             <p class="proCodeP">
                 Your Alpue property holds data for specified website on particular domain, or set of subdomains.<br>
                 Cross-domain setup for multiple domains in same property is not currently supported.
-                After 
+                After
             </p>
             <button id="newProButton" class="mediumButtonFixed">Create property</button>
             <br>
             <h3 class="h3ButtonMenu">User and property management</h3>
             <p class="proCodeP">
-                Currently, only you have access to the properties you have created and own. You can not share them with other users yet. <br>
+                Currently, only you have access to the properties you have created and own. You can not share them with
+                other users yet. <br>
                 In order to switch properties, switch account.
             </p>
             <button id="signOutButton" class="mediumButtonFixed">Sign Out</button>
@@ -181,7 +174,8 @@
             <h3 class="h3ButtonMenu">Test 01</h3>
             <p class="proCodeP">
                 This button is used for testing purposes. <br>
-                Test 01 is fetching local Firebase Cloud function that should connect to BigQuery API and return data from BQ -> FB -> Console in front end.
+                Test 01 is fetching local Firebase Cloud function that should connect to BigQuery API and return data
+                from BQ -> FB -> Console in front end.
             </p>
             <button id="test01" class="mediumButtonFixed">Test 01</button>
 
@@ -209,7 +203,7 @@
 
             <h3 class="h3ButtonMenu">Test 04</h3>
             <p class="proCodeP">
-                Fetches local "createDatasetTable" function to create with dummy values-
+                Fetches local logRecordToBQ to log dummy event
             </p>
             <button id="test04" class="mediumButtonFixed">Test 04</button>
         </div>
@@ -222,11 +216,17 @@
 
 
     <script src="bundle.js"></script>
-    <!-- <script src="bundle.js"></script> -->
+
+
+    <!-- <script src="http://127.0.0.1:5501/alpue-analytics.js"></script> -->
+    <script src="https://uzivatelgabo.github.io/alpue-analytics-tracking/alpue-analytics.js"></script>
+    <script>
+        logAlpueEvent('prop__Zbor_Vodopad_1727972788230', 'page_view')
+    </script>
 
 </body>
 <br>
 <br>
 <br>
-</html>
 
+</html>

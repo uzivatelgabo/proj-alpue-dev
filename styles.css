@@ -24,6 +24,7 @@ body{
 
 .topLeftLogo{
     height: 40px;
+    width: 40px;
     background-color: rgba(168, 78, 78, 0);
 }
 
@@ -511,6 +512,7 @@ header > ul > li > a:hover{
     margin-bottom: 10px;
     max-width: 90vw;
     color: rgb(30, 30, 30);
+    z-index: 100;
 
 }
 .mediumButton{
