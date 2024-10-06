@@ -16,3 +16,34 @@
     /* 1s fade-out */
     opacity: 0%;
 }
+.verFlexDivNext{
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    width: 1000px;
+    max-width: 90vw;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    height: 20px;
+
+}
+.proSelectNext{
+    all: unset;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 0;
+    border-radius: 5px;
+    background-color: rgb(110, 145, 174);
+    width: 290px;
+    font-size: 90%;
+    z-index: 20;
+    padding: 10px 10px;
+    transition-duration: 0ms;
+    box-shadow: 0px 0px 10px 0px rgba(181, 181, 181, 0.823);
+    height: 20px;
+    font-size: 100%;
+}
+.proSelectNext:hover{
+    box-shadow: 0px 0px 20px 0px rgba(110, 145, 174, 0.5);
+}

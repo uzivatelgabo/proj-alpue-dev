@@ -27,6 +27,9 @@ body{
     aspect-ratio: 16 / 6;
     background-color: rgba(168, 78, 78, 0);
 }
+.topLeftLogo:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
 
 .mmMenuButton{
     height: 40px;
@@ -69,6 +72,10 @@ body{
 .noStyle{
     all: unset;
     margin-right: 10px;
+    background-color: none;
+}
+.noStyle:hover{
+    background-color: rgba(255, 255, 255, 0);
 }
 header > ul > li > a{
     all: unset;
@@ -174,7 +181,10 @@ header > ul > li > a:hover{
     color: rgb(225, 225, 225);
     border-style: none;
     border-radius: 5px;
-    font-size: 150%;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .mmClose:hover{
     background-color: rgb(110, 145, 174);
@@ -500,13 +510,14 @@ header > ul > li > a:hover{
     padding-bottom: 0;
     border-radius: 5px;
     background-color: rgb(110, 145, 174);
-    width: 300px;
+    width: 290px;
     font-size: 90%;
     z-index: 20;
-    padding: 10px 5px;
+    padding: 10px 10px;
     transition-duration: 0ms;
     box-shadow: 0px 0px 10px 0px rgba(181, 181, 181, 0.823);
     height: 100px;
+    font-size: 100%;
 }
 .proSelect:hover{
     box-shadow: 0px 0px 20px 0px rgba(110, 145, 174, 0.5);
