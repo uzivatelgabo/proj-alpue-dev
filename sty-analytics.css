@@ -1,5 +1,18 @@
 .fetchLoadingAnime{
-    background-color: rgba(255, 227, 189, 0);
+    background-color: rgba(189, 248, 255, 0);
     height: 40px;
     width: 40px;
+    opacity: 0;
+    aspect-ratio: 1 / 1; /* Ensures the element is always square */
+
+}
+.fadeIn200 {
+    transition: opacity 150ms linear;
+    /* 1s fade-out */
+    opacity: 100%;
+}
+.fadeOut200{
+    transition: opacity 150ms linear;
+    /* 1s fade-out */
+    opacity: 0%;
 }

@@ -7,6 +7,33 @@ rgb(110, 145, 174)
 
 EN COLORS */
 
+.dropDownPropName{
+    font-size: 120%;
+    font-weight: 500;
+
+}
+.dropDownPropID{
+    font-size: 90%;
+    font-weight: 400;
+}
+.proDropUl{
+    background-color: rgba(0, 255, 255, 0);
+    max-height: 300px;
+    overflow: scroll;
+}
+.proDropMenu{
+    background-color: rgb(30, 30, 30);
+    width: 300px;
+    padding: 5px;
+    z-index: 10;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 30px 0px rgb(148, 148, 148);
+    visibility: hidden;
+    max-height: 300px;
+    transition-duration: 0ms;
+
+}
 
 .popOverlay {
     background-color: rgba(151, 151, 151, 0.273);
@@ -58,6 +85,7 @@ EN COLORS */
     /* 1s fade-out */
     opacity: 100%;
 }
+
 
 .collapse {
     animation: collapse 2000ms linear;

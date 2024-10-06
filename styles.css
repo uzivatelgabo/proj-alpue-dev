@@ -24,7 +24,7 @@ body{
 
 .topLeftLogo{
     height: 40px;
-    width: 40px;
+    aspect-ratio: 16 / 6;
     background-color: rgba(168, 78, 78, 0);
 }
 
@@ -304,6 +304,7 @@ header > ul > li > a:hover{
     background-color: rgba(127, 255, 212, 0);
     margin: 3px;
     padding: 3px;
+    overflow: scroll;
 }
 .dataTableURLs{
     display: table;
@@ -503,8 +504,9 @@ header > ul > li > a:hover{
     font-size: 90%;
     z-index: 20;
     padding: 10px 5px;
-    transition-duration: 200ms;
+    transition-duration: 0ms;
     box-shadow: 0px 0px 10px 0px rgba(181, 181, 181, 0.823);
+    height: 100px;
 }
 .proSelect:hover{
     box-shadow: 0px 0px 20px 0px rgba(110, 145, 174, 0.5);
@@ -542,17 +544,7 @@ header > ul > li > a:hover{
     color: black;
     font-size: 80%;
 }
-.proDropMenu{
-    background-color: rgb(30, 30, 30);
-    width: 300px;
-    padding: 5px;
-    z-index: 10;
-    border-radius: 5px;
-    margin-top: 5px;
-    box-shadow: 5px 5px 30px 0px rgb(148, 148, 148);
-    visibility: hidden;
 
-}
 .verFlexDiv{
     background-color: rgba(0, 255, 255, 0);
     display: flex;
