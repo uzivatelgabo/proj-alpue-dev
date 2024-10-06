@@ -25,10 +25,10 @@ body{
 .topLeftLogo{
     height: 40px;
     aspect-ratio: 16 / 6;
-    background-color: rgba(168, 78, 78, 0);
+    background-color: none;
 }
 .topLeftLogo:hover{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: none;
 }
 
 .mmMenuButton{
@@ -175,13 +175,13 @@ header > ul > li > a:hover{
 
 .mmClose{
     margin: 20px;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     background-color: rgb(30, 30, 30);
     color: rgb(225, 225, 225);
     border-style: none;
     border-radius: 5px;
-    font-size: 130%;
+    font-size: 170%;
     display: flex;
     align-items: center;
     justify-content: center;
