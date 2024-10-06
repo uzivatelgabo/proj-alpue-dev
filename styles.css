@@ -181,10 +181,11 @@ header > ul > li > a:hover{
     color: rgb(225, 225, 225);
     border-style: none;
     border-radius: 5px;
-    font-size: 200%;
+    font-size: 150%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 20px 0 rgb(199, 199, 199);
 }
 .mmClose:hover{
     background-color: rgb(110, 145, 174);
