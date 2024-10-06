@@ -175,13 +175,13 @@ header > ul > li > a:hover{
 
 .mmClose{
     margin: 20px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     background-color: rgb(30, 30, 30);
     color: rgb(225, 225, 225);
     border-style: none;
     border-radius: 5px;
-    font-size: 170%;
+    font-size: 250%;
     display: flex;
     align-items: center;
     justify-content: center;
