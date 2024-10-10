@@ -10,14 +10,28 @@ body{
     align-items: center;
     background-color: rgb(252, 252, 252);
 }
+.accountSVG{
+    width: 400px;
+    height: 25px;
+    background-color: rgb(244, 134, 0);
+}
+.headerUlLiA{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .headerD{
     all: unset;
-    background-color: rgba(165, 223, 223, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgb(235, 235, 235);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
     overflow: hidden;
 }
@@ -52,20 +66,33 @@ body{
 
 .headerUlD{
     all: unset;
-    margin: 10px;
-    background-color: rgba(255, 0, 0, 0);
+    margin: 15px;
+    background-color: rgba(255, 149, 149, 0);
+    border-radius: 7px;
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
+    height: 40px;
+    padding: 0px;
+}
+.headerUlMiddleD{
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 0 5px 0 rgb(240, 240, 240);
 }
 .headerUlLiD{
     all: unset;
     background-color: rgba(243, 255, 167, 0);
-    padding: 0 0px;
+    padding: 0px;
     text-align: center;
     display: flex; /* Add this line */
     align-items: center; /* Add this line */
+    justify-content: center;
+    flex-direction: row;
+    height: 30px;
+    width: 120px;
+    margin: 0;
 
 }
 
@@ -81,10 +108,16 @@ header > ul > li > a{
     all: unset;
     background-color: rgba(152, 152, 255, 0);
     text-decoration: none;
-    padding: 5px 0px;
-    width: 120px;
-    border-radius: 3px;
+    padding: 5px 5px;
+    width: 104px;
+    border-radius: 4px;
     transition-duration: 200ms;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 110%;
+    border: 0px solid rgb(29, 29, 29)
 }
 header > ul > li > a:hover{
     background-color: rgb(30, 30, 30);
@@ -195,6 +228,7 @@ header > ul > li > a:hover{
 }
 .desktopOnly{
     display: flex;
+    background-color: rgba(127, 255, 212, 0);
 }
 .mobileOnly{
     display: none;
@@ -245,6 +279,8 @@ header > ul > li > a:hover{
     max-width: 85%;
 }
 .centerDataBoard{
+    box-sizing: border-box; /* This ensures the padding is inside the element */
+
     display: grid;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
@@ -787,6 +823,7 @@ nav > ul {
     }
     .radioSlider{
         background-color: rgba(92, 188, 114, 0);
+        font-size: 90%;
     }
     .mediumButtonFixed{
         /* width: 85%;
@@ -804,7 +841,7 @@ nav > ul {
 
     }
     h1{
-        font-size: 130%;
+        /* font-size: 130%; */
     }
     .h1Button{
         font-size: 90%;
