@@ -11,9 +11,13 @@ body{
     background-color: rgb(252, 252, 252);
 }
 .accountSVG{
-    width: 400px;
+    width: 25px;
     height: 25px;
     background-color: rgb(244, 134, 0);
+}
+.googleLoginSVG{
+    height: 40px;
+    margin-right: 20px;
 }
 .headerUlLiA{
     background-color: rgba(0, 0, 0, 0);
@@ -22,6 +26,21 @@ body{
     align-items: center;
     justify-content: center;
 
+}
+.googleLogin{
+    all: unset;
+    background-color: rgb(240, 240, 240);
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 120%;
+    transition-duration: 200ms;
+}
+.googleLogin:hover{
+    background-color: rgb(230, 230, 230);
 }
 
 .headerD{
@@ -473,7 +492,7 @@ header > ul > li > a:hover{
     border-radius: 10px;
     margin: 30px;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     align-items: left;
     display: flex;
     flex-direction: column;
