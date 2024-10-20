@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="icon"
         href="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/alpue_logo_final%20(1).svg?alt=media&token=7df7f175-a8ff-4318-ae43-c84966c7ac8f"
         type="image/x-icon">
@@ -29,16 +30,11 @@
         </div>
 
         <ul class="mmUl">
-            <li class="mmLi"><a href="index.html">Alpue</a></li>
+            <li class="mmLi"><a href="intro.html">Alpue</a></li>
+            <li class="mmLi"><a href="index.html">Reports</a></li>
             <li class="mmLi"><a href="services.html" class="mmA">Services</a></li>
             <li class="mmLi"><a href="about.html" class="mmA">About</a></li>
-            <li class="mmLi">
-                <a href="login.html" id="menuLoginState" class="headerUlLiA">
-                    Account
-                    <img class="accountSVG desktopOnly" src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/alpue_acc.svg?alt=media&token=eb4a3274-1f10-4c80-91fa-65e5b92ecb3c" alt="">
-
-                </a>
-            </li>
+            <li class="mmLi"><a href="login.html" class="mmA" id="menuLoginState">My Account</a></li>
         </ul>
     </div>
 </div>
@@ -91,7 +87,8 @@
         </ul>
 
         <ul class="headerUlD headerUlMiddleD">
-            <li class="headerUlLiD desktopOnly "><a href="index.html">Alpue</a></li>
+            <li class="headerUlLiD desktopOnly "><a href="intro.html">Alpue</a></li>
+            <li class="headerUlLiD desktopOnly "><a href="index.html">Reports</a></li>
             <li class="headerUlLiD desktopOnly"><a href="services.html">Services</a></li>
             <li class="headerUlLiD desktopOnly"><a href="about.html">About</a></li>
         </ul>
@@ -100,7 +97,7 @@
             <li class="headerUlLiD desktopOnly">
                 <a href="login.html" id="menuLoginState" class="headerUlLiA">
                     Account
-                    <img class="accountSVG desktopOnly" src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/acc_blue_wide.svg?alt=media&token=0010b87c-d95b-46e7-b0e0-1d83b289c99b" alt="">
+                    <img id="topRightAccImg" class="accountSVG desktopOnly googleLoginSVG" src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/acc_blue_wide.svg?alt=media&token=0010b87c-d95b-46e7-b0e0-1d83b289c99b" alt="">
 
                 </a>
             </li>
@@ -115,15 +112,20 @@
 
 
     <div class="verFlexDiv">
-        <h1 class="textLeft">
-            Account overview
+        <div class="horFlex">
+            <h1 class="textLeft" id="userWelcomeName">
+                Hello User
+            </h1>
+            <img class="userImage" id="userProfileImg" src="" alt="">
+        </div>
+
         
-        </h1>
 
 
         <div class="floatingDivFlexible">
             <p id="accountEmail" class="proCodeP">Email:</p>
             <p id="accountUserID" class="proCodeP">User ID:</p>
+            <p id="accountUserName" class="proCodeP">Name:</p>
             <p id="accountProperties" class="proCodeP">Properties: loading</p>
         </div>
 
@@ -239,10 +241,10 @@
 
 
     <!-- <script src="http://127.0.0.1:5501/alpue-analytics.js"></script> -->
-    <!-- <script src="https://uzivatelgabo.github.io/alpue-analytics-tracking/alpue-analytics.js"></script>
+    <script src="https://uzivatelgabo.github.io/alpue-analytics-tracking/alpue-analytics.js"></script>
     <script>
         logAlpueEvent('prop_new_08_1727989422600', 'page_view')
-    </script> -->
+    </script>
 
 </body>
 <br>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpue Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="acc-styles.css">
+    <link rel="stylesheet" href="sty-analytics.css">
+    <link rel="stylesheet" href="intro.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="icon"
+        href="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/alpue_logo_final%20(1).svg?alt=media&token=7df7f175-a8ff-4318-ae43-c84966c7ac8f"
+        type="image/x-icon">
+
+
+
+    <div class="mobileMenuOverlay" id="mobileMenuOverlay"></div>
+    <div class="mobileMenuHolder" id="mobileMenuHolder">
+        <div class="mobileMenu">
+            <div class="mmMenuTopDiv">
+                <button class="mmClose" id="mmCloseButton">&#10005;</button>
+            </div>
+
+            <ul class="mmUl">
+                <li class="mmLi"><a href="intro.html">Alpue</a></li>
+                <li class="mmLi"><a href="index.html">Reports</a></li>
+                <li class="mmLi"><a href="services.html" class="mmA">Services</a></li>
+                <li class="mmLi"><a href="about.html" class="mmA">About</a></li>
+                <li class="mmLi"><a href="login.html" class="mmA" id="menuLoginState">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+<body>
+    <header class="headerD">
+        <ul class="headerUlD">
+            <li class="headerUlLiD desktopOnly">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/alpue_logo_final%20(1).svg?alt=media&token=7df7f175-a8ff-4318-ae43-c84966c7ac8f"
+                    alt="alpue logo full" class="topLeftLogo">
+            </li>
+            <button class="mmMenuButton mobileOnly" id="mmOpenMobileMenu">menu</button>
+        </ul>
+
+        <ul class="headerUlD headerUlMiddleD">
+            <li class="headerUlLiD desktopOnly "><a href="intro.html">Alpue</a></li>
+            <li class="headerUlLiD desktopOnly "><a href="index.html">Reports</a></li>
+            <li class="headerUlLiD desktopOnly"><a href="services.html">Services</a></li>
+            <li class="headerUlLiD desktopOnly"><a href="about.html">About</a></li>
+        </ul>
+
+        <ul class="headerUlD">
+            <li class="headerUlLiD desktopOnly">
+                <a href="login.html" id="menuLoginState" class="headerUlLiA">
+                    Account
+                    <img class="accountSVG desktopOnly" src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/acc_blue_wide.svg?alt=media&token=0010b87c-d95b-46e7-b0e0-1d83b289c99b" alt="">
+
+                </a>
+            </li>
+            <li class="headerUlLiD mobileOnly"><a href="index.html" class="noStyle"><img
+                        src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/alpue_logo_final%20(1).svg?alt=media&token=7df7f175-a8ff-4318-ae43-c84966c7ac8f"
+                        alt="alpue logo mini" class="topLeftLogo"></a></li>
+
+        </ul>
+
+    </header>
+    
+    <div class="bodyDiv">
+    <h1 class="h1Title">
+        Web Analytics with single customer view.<br><br>
+        Customer-level <strong>&amp;</strong> aggregated view in the same tool.
+    </h1>
+    <p class="p1Text">Alpue Analytics&trade; = analytics & CRM/CDP features all in one platform. <br>
+        GA4 (aggregated data) + Salesforce (customer-level data) in one tool.
+        <!-- traffic source tracking, pages analytics, conversion atribution + single customer view -->
+    </p>
+    <div class="aggPlusIndDIV">
+        <div class="floatingRec">
+            <h3 class="cartTitleBig">Customer-level</h3>
+            <p>Single customer view with customer attributes (PII included) and events</p>
+            <p>Identity merging (cookies, email click-throughts, 1st tparty data)</p>
+            <p>Customer data import</p>
+            <p>Alpue Actions&trade; module (email, SMS, PUSH, API)</p>
+        </div>
+        <p class="p1BigPlus">+</p>
+        <div class="floatingRec">
+            <h3 class="cartTitleBig">Aggregated</h3>
+            <p>Traffic source tracking</p>
+            <p>Conversion attribution modeling (LCA, DDA)</p>
+            <p>Cookie-less content tracking (no customer consent needed)</p>
+            <p>Custom event and attribute tracking with native and custom funnels and visualisation</p>
+            <p>Page speed and web performance tracking</p>
+            <p>Engagement metrics tracking</p>
+
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+    </div>
+    <script src="bundle.js"></script>
+    <script src="http://127.0.0.1:5501/alpue-analytics.js"></script>
+</body>
+
+</html>

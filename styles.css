@@ -2,29 +2,56 @@
 body{
     all: unset;
     text-align: center;
-    font-family: "IBM Plex Mono";
+    /* font-family: "IBM Plex Mono"; */
     margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(252, 252, 252);
+    font-family: "DM Sans";
 }
 .accountSVG{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
     background-color: rgb(244, 134, 0);
 }
-.googleLoginSVG{
+.circleImage{
+    border-radius: 50%;
+
+}
+.userImage{
     height: 40px;
-    margin-right: 20px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+.googleLoginSVG{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 0px;
+
+}
+.googleLogoSVG{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
 }
 .headerUlLiA{
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid rgb(30, 30, 30);
+    border: 2px solid rgb(30, 30, 30);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+    width: 250px;
 
 }
 .googleLogin{
@@ -587,6 +614,7 @@ header > ul > li > a:hover{
     max-width: 90vw;
     color: rgb(30, 30, 30);
     z-index: 100;
+    display: flex;
 
 }
 .mediumButton{
@@ -610,6 +638,11 @@ header > ul > li > a:hover{
     background-color: rgba(255, 255, 255, 0);
     color: black;
     font-size: 80%;
+}
+.horFlex{
+    display: flex;
+    justify-content: left;
+    align-items: end;
 }
 
 .verFlexDiv{
