@@ -3,12 +3,108 @@
 
 --Alpue Blue
 rgb(110, 145, 174)
+rgb(94, 129, 157);
 #6e91ae
 
 EN COLORS */
 
 body{
     font-family: DM Sans;
+}
+.flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 220, 0);
+    height: 80px;
+}
+.flexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(255, 255, 107);
+    width: 100%;
+}
+.imageIcon30margin10{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.buttonBase{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition-duration: 100ms;
+    font-size: 120%;
+}
+.buttonBase:hover{
+    font-size: 140%;
+}
+.backBlack{
+    background-color: rgb(30, 30, 30);
+    color: rgb(225, 225, 225);
+    box-shadow: 0 0 20px 0 rgb(201, 201, 201);
+}
+.backBlack:hover{
+    /* background-color: black; */
+}
+.backBlue{
+    background-color: rgb(110, 145, 174);
+    color: rgb(30, 30, 30);
+    box-shadow: 0 0 20px 0 rgb(206, 206, 206);
+}
+.backBlue:hover{
+    /* background-color:  rgb(94, 129, 157); */
+
+}
+.back235{
+    background-color: rgb(235, 235, 235);
+    color: rgb(30, 30, 30);
+}
+.back230{
+    background-color: rgb(230, 230, 230);
+    color: rgb(30, 30, 30);
+
+}
+.back240{
+    background-color: rgb(240, 240, 240);
+    color: rgb(30, 30, 30);
+
+}
+.textBlack{
+    color: rgb(30, 30, 30);
+}
+.textMidWhite{
+    color: rgb(230, 230, 230);
+    font-size: 200%;
+    background-color: rgba(0, 255, 255, 0);
+
+}
+
+.width600px90percent10padding{
+    width: 600px;
+    max-width: 90%;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.paddingInside{
+    box-sizing: border-box;
 }
 
 
@@ -41,15 +137,19 @@ body{
 
 }
 .floatingRec{
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(239, 239, 239);
     border-radius: 10px;
-    box-shadow: 0 0 0px 0 rgb(230, 230, 230);
+    box-shadow: 0 0 20px 0 rgb(245, 245, 245);
     width: 45%;
     /* height: 400px; */
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
     color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 .aggPlusIndDIV{
     width: 100%;
@@ -64,11 +164,67 @@ body{
     padding: 0;
     margin: 10px;
 }
+.pDividingLine{
+    border: none; /* Removes the default border */
+    height: 0.5px; /* Adjust the thickness of the line */
+    background-color: rgb(225, 225, 225);
+    margin: 0px 0; /* Adds space around the line */
+    width: 100%; /* Adjust the width of the line */
+}
+.pPoints{
+    padding: 10px;
+    margin: -1px;
+    background-color: rgba(127, 255, 212, 0);
+    width: 100%;
+    transition-duration: 100ms;
+}
+.pPoints:hover{
+    /* background-color: rgb(110, 145, 174); */
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.genFooter{
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+}
+.contactSalesForm{
+    background-color: rgb(240, 240, 240);
+    width: 600px;
+    max-width: 90%;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(225, 225, 225);
+}
+.noShadowWhiteBack{
+    box-shadow: none;
+    background-color: rgb(225, 225, 225);
+    color: rgb(30, 30, 30);
+    border: 0px white solid;
+    padding: 5px;
+}
+.noShadow{
+    box-shadow: none;
+}
+.height100{
+    height: 100px;
+    text-align: left;
+}
+
+
 @media (max-aspect-ratio: 10/14) {
     .aggPlusIndDIV{
         flex-direction: column;
     }
     .floatingRec{
         width: 100%;
+    }
+    .buttonBase{
+        font-size: 100%;
+    }
+    .buttonBase:hover{
+        font-size: 110%;
     }
 }

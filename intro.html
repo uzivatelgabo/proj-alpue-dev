@@ -79,30 +79,50 @@
     <div class="bodyDiv">
     <h1 class="h1Title">
         Web Analytics with single customer view.<br><br>
-        Customer-level <strong>&amp;</strong> aggregated view in the same tool.
+        Customer-level & aggregated data in the same tool.
     </h1>
+    <div class="flexRowCenter">
+        <button class="buttonBase backBlue">Try demo</button>
+        <button class="buttonBase backBlack" id="contactSalesIntroButton">Contact sales</button>
+    </div>
+    <br>
     <p class="p1Text">Alpue Analytics&trade; = analytics & CRM/CDP features all in one platform. <br>
         GA4 (aggregated data) + Salesforce (customer-level data) in one tool.
         <!-- traffic source tracking, pages analytics, conversion atribution + single customer view -->
     </p>
     <div class="aggPlusIndDIV">
         <div class="floatingRec">
-            <h3 class="cartTitleBig">Customer-level</h3>
-            <p>Single customer view with customer attributes (PII included) and events</p>
-            <p>Identity merging (cookies, email click-throughts, 1st tparty data)</p>
-            <p>Customer data import</p>
-            <p>Alpue Actions&trade; module (email, SMS, PUSH, API)</p>
+            <div class="flexRowCenter">
+                <img class="imageIcon30margin10" src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/customer.png?alt=media&token=52b36cae-2cda-4032-bd36-a28f2ba1930d" alt="">
+                <h3 class="cartTitleBig">Customer-level</h3>
+            </div>
+            <p class="pPoints">Single customer view with customer attributes (PII included) and events</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Identity merging (cookies, email click-throughts, 1st tparty data)</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Customer data import</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Alpue Actions&trade; module (email, SMS, PUSH, API)</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Integrated form submissions and surveys, A/B testing and other</p>
         </div>
         <p class="p1BigPlus">+</p>
         <div class="floatingRec">
-            <h3 class="cartTitleBig">Aggregated</h3>
-            <p>Traffic source tracking</p>
-            <p>Conversion attribution modeling (LCA, DDA)</p>
-            <p>Cookie-less content tracking (no customer consent needed)</p>
-            <p>Custom event and attribute tracking with native and custom funnels and visualisation</p>
-            <p>Page speed and web performance tracking</p>
-            <p>Engagement metrics tracking</p>
-
+            <div class="flexRowCenter">
+                <img class="imageIcon30margin10" src="https://firebasestorage.googleapis.com/v0/b/gais-analytics-demo.appspot.com/o/bar-chart.png?alt=media&token=d13b437e-5533-4b35-866b-0b56cff4c89d" alt="">
+                <h3 class="cartTitleBig">Aggregated</h3>
+            </div>
+            <p class="pPoints">Traffic source tracking</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Conversion attribution modeling (LCA, DDA)</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Cookie-less content tracking (no customer consent needed, no pii collected)</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Custom event and attribute tracking with native and custom funnels and visualisation</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Page speed and web performance tracking</p>
+            <hr class="pDividingLine">
+            <p class="pPoints">Customizable A/B testing with tracking and analytics</p>
         </div>
     </div>
 
@@ -110,12 +130,42 @@
     <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-
     </div>
+
+    <footer class="genFooter flexColumnCenter">
+        <p class="width600px90percent10padding textMidWhite flexRowLeft">Contact sales</p>
+        <form class="contactSalesForm flexColumnCenter paddingInside" id="contactSalesForm">
+            <label class="formLabel textBlack">Email:</label>
+            <input class="formInput noShadowWhiteBack" type="text" required name="email">
+            <label class="formLabel textBlack textBlack">Name:</label>
+            <input class="formInput noShadowWhiteBack" type="text" required name="name">
+            <label class="formLabel textBlack">Note:</label>
+            <textarea class="formInput noShadowWhiteBack height100" type="text" name="note"></textarea>
+
+            <div class="flexRowCenter">
+                <button class="backBlue buttonBase noShadow" id="contactSalesFormButton">Send</button>
+            </div>
+            
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </footer>
+
+
+
     <script src="bundle.js"></script>
     <script src="http://127.0.0.1:5501/alpue-analytics.js"></script>
 </body>
+
 
 </html>
